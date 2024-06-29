@@ -80,6 +80,7 @@ body{
     object-fit: contain;
     border-radius: 15px;
 }
+
 .card p {
     font-size: 12px;
     overflow: hidden;
