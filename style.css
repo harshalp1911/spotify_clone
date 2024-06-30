@@ -74,6 +74,7 @@ body{
     width: 150px;
     padding: 10px;
     border-radius: 5px;
+    position: relative;
 }
 .card img{
     width: 100%;
@@ -94,4 +95,17 @@ body{
     display: flex;
     gap: 8px;
     flex-wrap: wrap;
+}
+.play-btn{
+    width: 35px;
+    height: 10px;
+    position: absolute;
+    top: 125px;
+    fill: green;
+    right: 18px;
+    opacity: 0;
+}
+.play-btn:hover{
+    opacity: 1;
+    transition: 0s ease-out;
 }
