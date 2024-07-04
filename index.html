@@ -4,13 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify</title>
+    <title>Spotify- Web Player</title>
+    <link rel="icon" type="image/x-icon" href="assets/l4mj1df692gjqgutuvvsfa2eib-c2a91ad484f85a0813f31e0e9e90cf47.png">
 </head>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="utility.css">
 
 <body>
+    <!-- ==== main container starts ======== -->
     <div class="container flex bg-black">
+
+        <!-- Left section  -->
         <div class="left">
             <div class="home bg-grey  rounded m-1 p-1">
                 <div class="logo"> <img class="invert" src="assets/logo.svg" alt="spotify"></div>
@@ -24,6 +28,23 @@
                     <img class="invert" src="assets/urPlaylist.svg" alt="">
                     <h4>Your Playlist</h4>
                 </div>
+
+                <div class="song-list">
+                    <ul>
+                        <li>
+                            <img class="invert" src="assets/music.svg" alt="music">
+                            <div class="info">
+                                <div>Song name</div>
+                                <div>Song Artist</div>
+                            </div>
+                            <div class="play-now">
+                                <span>Play Now</span>
+                                <img class="invert" src="assets/play.svg" alt="play">
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
                 <div class="footer">
                     <div><a href="#"><span>Legal</span></a></div>
                     <div><a href="#"><span>Safety & Privacy Center</span></a></div>
@@ -36,8 +57,12 @@
 
             </div>
 
-        </div>
+        </div> <!-- End Left Section-->
+
+        <!-- Start right section -->
         <div class="right bg-grey  rounded">
+
+            <!-- Start Header -->
             <div class="header">
                 <div class="nav">
                     <svg class="invert" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
@@ -52,63 +77,80 @@
                     </svg>
                 </div>
                 <div class="button">
-                    <button>Sign up</button>
+                    <button class="signup-btn">Sign up</button>
                     <button class="sign-up">Log in</button>
                 </div>
 
-            </div>
+            </div> <!-- End Header -->
 
+            <!-- Starts Spotify Playlist section -->
             <div class="spotify-playlist">
                 <h1>Spotify Playlists</h1>
                 <div class="card-container">
                     <div class="card ">
-                        <div class="play-btn" > 
-                            <img  src="assets/green-play-button-icon.svg" alt="">
+                        <div class="play-btn">
+                            <img src="assets/green-play-button-icon.svg" alt="">
                         </div>
                         <img src="https://i.scdn.co/image/ab67706f00000002c61f28bb8f3662ae8f720848" alt="">
                         <h3>Party Hits</h3>
                         <p>A mix of the biggest pop, dance, and hip hop party songs. Cover: Charli xcx</p>
                     </div>
                     <div class="card ">
-                        <div class="play-btn" > 
-                            <img  src="assets/green-play-button-icon.svg" alt="">
+                        <div class="play-btn">
+                            <img src="assets/green-play-button-icon.svg" alt="">
                         </div>
                         <img src="https://i.scdn.co/image/ab67706f000000025e9914caee21f8ce1418df46" alt="">
                         <h3>Today's Top Hits</h3>
                         <p>Kendrick Lamar is on top of the Hottest 50!</p>
                     </div>
                     <div class="card ">
-                        <div class="play-btn" > 
-                            <img  src="assets/green-play-button-icon.svg" alt="">
+                        <div class="play-btn">
+                            <img src="assets/green-play-button-icon.svg" alt="">
                         </div>
                         <img src="https://i.scdn.co/image/ab67706f000000028a9e50e6e634a604fa545f72" alt="">
                         <h3>Phonk's</h3>
                         <p>The beat of your drift</p>
                     </div>
                     <div class="card ">
-                        <div class="play-btn" > 
-                            <img  src="assets/green-play-button-icon.svg" alt="">
+                        <div class="play-btn">
+                            <img src="assets/green-play-button-icon.svg" alt="">
                         </div>
                         <img src="https://i.scdn.co/image/ab67706f000000021c7199249e9412f6d0e57a73" alt="">
                         <h3>RapCaviar</h3>
                         <p>Music from Central Cee, Lil Baby, Kendrick Lamar and Gunna. </p>
                     </div>
                     <div class="card ">
-                        <div class="play-btn" > 
-                            <img  src="assets/green-play-button-icon.svg" alt="">
+                        <div class="play-btn">
+                            <img src="assets/green-play-button-icon.svg" alt="">
                         </div>
                         <img src="https://i.scdn.co/image/ab67706f00000002c61f28bb8f3662ae8f720848" alt="">
                         <h3>Party Hits</h3>
                         <p>A mix of the biggest pop, dance, and hip hop party songs. Cover: Charli xcx</p>
                     </div>
                 </div>
-            </div>
+                <div class="play-bar">
+                    <div class="song-info">
 
-        </div>
+                    </div>
+                    <div class="song-btn invert">
+                        <img src="assets/backward.svg" alt="">
+                        <img src="assets/play.svg" alt="">
+                        <img src="assets/forward.svg" alt="">
+                    </div>
+                    <div class="song-time">
 
-    </div>
+                    </div>
+
+                </div>
+            </div> <!-- End Spotify playlist section-->
+
+        </div> <!-- End right section -->
+
+    </div> <!-- end Main container-->
 
 
+    <!-- JavaScript link -->
+    <script src="script.js"></script>
 </body>
 
 </html>
