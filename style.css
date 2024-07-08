@@ -200,3 +200,6 @@ body{
     background-color: rgb(255, 255, 255);
     transition: left 0.4s;
 }
+.song-btn img{
+    cursor: pointer;
+}
